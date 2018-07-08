@@ -105,7 +105,7 @@ def download(url, headers, proxy, num_retries, data=None):
         num_All+=1
         code = response.code
     except Exception as e:
-        print ('Download error:', e.reason)
+        print ('Download error:', e)
         html = ''
         if hasattr(e, 'code'):
             code = e.code
